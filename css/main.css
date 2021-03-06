@@ -1176,6 +1176,10 @@ img {
   .team-list li .social-list {
     margin: 0;
   }
+  .our-team {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .our-clients {
