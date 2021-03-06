@@ -1,0 +1,241 @@
+.logo-link {
+  display: inline-block;
+  padding: 16px 0;
+  font-family: var(--font-second);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+
+  & .logo-studio {
+    color: var(--text-color);
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+  .adress-top {
+    display: none;
+  }
+
+  .burger-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: var(--animation);
+    & .burger-icon {
+      width: 24px;
+      height: 16px;
+    }
+    &:focus {
+      fill: var(--hover-color);
+    }
+    &:hover {
+      fill: var(--hover-color);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    max-height: 80px;
+  }
+  .logo-link {
+    padding: 26px 0;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .flex-nav {
+    display: contents;
+  }
+
+  .nav-list {
+    display: flex;
+    & a {
+      position: relative;
+      font-family: var(--font-general);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: var(--text-color);
+      transition: var(--animation);
+
+      &:hover,
+      &:focus {
+        color: var(--hover-color);
+      }
+    }
+    & li {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+  .adress-top {
+    padding: 21px 0;
+    & a {
+      display: flex;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      color: var(--p-color);
+      transition: var(--animation);
+      &:hover,
+      &:focus {
+        color: var(--hover-color);
+      }
+    }
+  }
+
+  .top-mail {
+    padding-bottom: 10px;
+  }
+
+  .mail-icon {
+    width: 14px;
+    height: 10px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .phone-icon {
+    width: 10px;
+    height: 14px;
+    fill: currentColor;
+    margin-right: 10px;
+    vertical-align: text-top;
+  }
+}
+.header-underline {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .mail-icon {
+    width: 14px;
+    height: 10px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .phone-icon {
+    width: 10px;
+    height: 14px;
+    fill: currentColor;
+    margin-right: 10px;
+    vertical-align: text-top;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .adress-top a {
+    display: inline;
+    font-family: var(--font-general);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--p-color);
+    transition: var(--animation);
+    &:hover,
+    &:focus {
+      color: var(--hover-color);
+    }
+  }
+  .flex-nav {
+    display: flex;
+    width: 532px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-mail {
+    margin-right: 50px;
+  }
+
+  .mail-icon {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .phone-icon {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+    vertical-align: text-top;
+  }
+}
+
+//ssssssssssss
+//   .header {
+//     width: 100%;
+//     & li:not(.last-nav) {
+//       margin-right: 50px;
+//     }
+//   }
+//   .header-container {
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   .nav-list {
+//     display: flex;
+//     width: 294px;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 32px 0 32px 0;
+//     & a {
+//       position: relative;
+//       font-weight: 500;
+//       font-size: 14px;
+//       line-height: 16px;
+//       letter-spacing: 0.02em;
+//       color: var(--text-color);
+//       transition: color var(--animation);
+//       &:hover,
+//       &:focus {
+//         color: var(--hover-color);
+//       }
+//     }
+//   }
+//   .logo-web {
+//     color: var(--hover-color);
+//     font-family: var(--font-second);
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 26px;
+//     line-height: 31px;
+//   }
+
+//   .logo-studio {
+//     margin-right: 93px;
+//     color: black;
+//     font-family: "Raleway";
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 26px;
+//     line-height: 31px;
+//   }
+
+// }

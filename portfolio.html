@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <title>Портфолио|WebStudio</title>
+  </head>
+  <body>
+    <header class="header header-underline">
+      <div class="container header-container">
+        <nav class="flex-nav">
+          <a href="./index.html" class="logo-link"
+            ><span class="logo-web">Web</span
+            ><span class="logo-studio">Studio</span></a
+          >
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a href="./portfolio.html"
+                ><span class="current-link">Портфолио</span></a
+              >
+            </li>
+            <li><a href="#footer">Контакты</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="burger-btn" data-menu-button>
+          <svg class="burger-icon">
+            <use href="./images/sprite.svg#burger"></use>
+          </svg>
+        </button>
+        <address class="adress-top">
+          <a class="top-mail" href="mailto:info@devstudio.com">
+            <svg class="mail-icon" width="16" height="12">
+              <use href="./images/sprite.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a href="tel:+380961111111">
+            <svg class="phone-icon" width="10" height="16">
+              <use href="./images/sprite.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </address>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-btn" data-menu-close>
+          <svg class="mobile-close-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav-item">
+            <a href="./index.html"><span class="current-link">Студия</span></a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-nav-item"><a href="#footer">Контакты</a></li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contact-item contact-phone">
+            <a cohref="tel:+380961111111"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contact-item contact-mail">
+            <a class="top-mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-contact-item">
+            <ul class="mobile-social">
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-social-link">Instagram</a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-social-link">Twitter</a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-social-link">Facebook</a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="#" class="mobile-social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section-padding">
+        <div class="container">
+          <!-- CATEGORIES -->
+          <ul class="category-list">
+            <li>
+              <button class="all"><span>Все</span></button>
+            </li>
+            <li>
+              <button class="sites"><span>Веб-сайты</span></button>
+            </li>
+            <li>
+              <button class="apps"><span>Приложения</span></button>
+            </li>
+            <li>
+              <button class="design"><span>Дизайн</span></button>
+            </li>
+            <li>
+              <button class="marketing"><span>Маркетинг</span></button>
+            </li>
+          </ul>
+          <h1 class="examples">Примеры работ</h1>
+          <!-- EXAMPLES -->
+          <ul class="examples-list">
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_1@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_1@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_1@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_1@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_1@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_1@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_1@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_1@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_1@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_1@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_1@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_1@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_1@x1.jpg"
+                      alt="Технокряк Веб-сайт"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Технокряк</h2>
+                  <p>Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_2@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_2@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_2@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_2@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_2@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_2@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_2@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_2@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_2@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_2@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_2@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_2@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_2@x1.jpg"
+                      alt="Постер Orlean vs Golden Star Дизайн"
+                  /></picture>
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Постер <span lang="EN"> Orlean vs Golden Star</span></h2>
+                  <p>Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_3@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_3@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_3@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_3@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_3@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_3@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_3@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_3@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_3@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_3@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_3@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_3@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_3@x1.jpg"
+                      alt="Ресторан Seafood Приложение"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Ресторан <span lang="EN">Seafood</span></h2>
+                  <p>Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_4@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_4@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_4@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_4@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_4@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_4@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_4@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_4@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_4@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_4@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_4@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_4@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_4@x1.jpg"
+                      alt="Проект Prime Маркетинг"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Проект <span lang="EN">Prime</span></h2>
+                  <p>Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_5@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_5@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_5@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_5@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_5@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_5@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_5@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_5@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_5@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_5@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_5@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_5@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_5@x1.jpg"
+                      alt="Проект Boxes Приложение"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Проект <span lang="EN">Boxes</span></h2>
+                  <p>Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_6@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_6@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_6@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_6@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_6@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_6@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_6@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_6@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_6@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_6@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_6@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_6@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_6@x1.jpg"
+                      alt="Inspiration has no Borders Веб-сайт"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2 lang="EN">Inspiration has no Borders</h2>
+                  <p>Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_7@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_7@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_7@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_7@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_7@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_7@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_7@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_7@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_7@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_7@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_7@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_7@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_7@x1.jpg"
+                      alt="Издание Limited Edition Дизайн"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Издание <span lang="EN">Limited Edition</span></h2>
+                  <p>Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_8@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_8@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_8@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_8@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_8@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_8@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_8@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_8@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_8@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_8@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_8@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_8@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_8@x1.jpg"
+                      alt="Проект LAB Маркетинг"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2>Проект <span lang="EN">LAB</span></h2>
+                  <p>Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://picsum.photos/1200/600">
+                <div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_9@x1.webp 1x,
+                        ./images/portfolio-examples/desktop-example_9@x2.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/desktop-example_9@x1.jpg 1x,
+                        ./images/portfolio-examples/desktop-example_9@x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_9@x1.webp 1x,
+                        ./images/portfolio-examples/tablet-example_9@x2.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/tablet-example_9@x1.jpg 1x,
+                        ./images/portfolio-examples/tablet-example_9@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_9@x1.webp 1x,
+                        ./images/portfolio-examples/mobile-example_9@x2.webp 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-examples/mobile-example_9@x1.jpg 1x,
+                        ./images/portfolio-examples/mobile-example_9@x2.jpg 2x
+                      "
+                      media="(min-width: 320px)" />
+                    <img
+                      src="./images/portfolio-examples/mobile-example_9@x1.jpg"
+                      alt="Growing Business Приложение"
+                  /></picture>
+
+                  <p class="overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    doloribus qui? Mollitia explicabo, numquam recusandae
+                    sapiente harum qui modi rem labore consequuntur, nihil
+                    obcaecati quas nulla totam eaque quidem enim.
+                  </p>
+                </div>
+                <div class="examples-sign-container">
+                  <h2 lang="EN">Growing Business</h2>
+                  <p>Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <!--ID для ссылки-якоря-->
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-contacts">
+            <div class="logo-2">
+              <a href="./index.html"
+                ><span class="logo-web">Web</span
+                ><span class="logo-studio-2">Studio</span></a
+              >
+            </div>
+            <address>
+              <div class="adress-bottom">
+                <div class="adress-item">
+                  <a
+                    href="https://goo.gl/maps/Ce2jviXbWAB63QqT9"
+                    class="adress-visit"
+                    >г. Киев, пр-т Леси Украинки, 26 </a
+                  ><br />
+                </div>
+                <div class="adress-item">
+                  <a href="mailto:info@example.com" class="down-contacts"
+                    >info@devstudio.com</a
+                  ><br />
+                </div>
+                <div class="adress-item">
+                  <a href="tel:+380961111111" class="down-contacts"
+                    >+38 096 111 11 11</a
+                  >
+                </div>
+              </div>
+            </address>
+          </li>
+          <li class="join-us">
+            Присоединяйтесь
+            <ul class="footer-social-list">
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a href="" class="footer-social-list-link">
+                  <svg class="footer-social-list-icon">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- SUBSCRIBE -->
+          <li class="subscribe-list-item">
+            <p class="subscribe-headder">Подпишитесь на рассылку</p>
+            <form class="subscribe-form">
+              <label for="subscribe-mail" class="subscribe-mail-label">
+                <input
+                  type="email"
+                  name="subscribe-mail"
+                  id="subscribe-mail"
+                  class="subscribe-input-mail"
+                  placeholder="E-mail"
+              /></label>
+              <button type="submit" class="subscribe-button">
+                Подписаться
+                <svg class="subscribe-icon">
+                  <use href="./images/sprite.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

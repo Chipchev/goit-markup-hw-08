@@ -1,0 +1,123 @@
+.banner {
+  padding: 118px 0;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  height: 400px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/banner/mobile-banner@x1.jpg);
+  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .banner {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/banner/mobile-banner@x2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/banner/tablet-banner@x1.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/banner/tablet-banner@x2.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/banner/desktop-banner@x1.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/banner/desktop-banner@x2.jpg");
+  }
+}
+.h1-studio {
+  display: block;
+  font-family: var(--font-general);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.button {
+  padding: 0;
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 30px;
+  border: 0;
+  border-radius: 4px;
+  transition: var(--animation);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  & span {
+    font-family: var(--font-general);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding: 10px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    height: 600px;
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+  .h1-studio {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}

@@ -1,0 +1,43 @@
+/* We-Do Section */
+@media screen and (max-width: 1199px) {
+  .we-do-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .we-do {
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+  .our-work {
+    display: flex;
+    justify-content: center;
+    & li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .we-do-thumb {
+    position: relative;
+  }
+  .we-do-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: var(--font-general);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px 0;
+    margin: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+  }
+}
