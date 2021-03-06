@@ -675,11 +675,17 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .examples-list li {
+    margin-right: 25px;
+    margin-bottom: 30px;
+  }
+  .examples-list li:nth-child(n + 8) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
   .examples-list li {
-    margin-right: 25px;
     margin-bottom: 30px;
   }
   .examples-list li:nth-child(n + 8) {

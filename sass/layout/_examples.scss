@@ -79,11 +79,19 @@
   .category-list {
     justify-content: center;
   }
+  .examples-list {
+    & li {
+      margin-right: 25px;
+      margin-bottom: 30px;
+      &:nth-child(n + 8) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 @media screen and (max-width: 1199px) {
   .examples-list {
     & li {
-      margin-right: 25px;
       margin-bottom: 30px;
       &:nth-child(n + 8) {
         margin-bottom: 0;
