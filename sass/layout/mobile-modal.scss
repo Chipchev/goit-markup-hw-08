@@ -99,6 +99,7 @@
     &:not(:last-child)::after {
       content: "";
       display: inline-block;
+      align-self: baseline;
       height: 1px;
       width: 22px;
       color: rgba(33, 33, 33, 0.2);
