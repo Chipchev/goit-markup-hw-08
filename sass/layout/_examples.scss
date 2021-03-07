@@ -82,6 +82,11 @@
       width: 100%;
       height: auto;
     }
+    & a {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
   .overlay {
     display: none;
@@ -89,11 +94,6 @@
     left: 0;
     top: 0;
     width: auto;
-    height: auto;
-  }
-  & a {
-    display: block;
-    width: 100%;
     height: auto;
   }
 }
@@ -105,7 +105,7 @@
     & li {
       margin-right: 25px;
       margin-bottom: 30px;
-      &:nth-child(n + 8) {
+      &:nth-child(n + 9) {
         margin-bottom: 0;
       }
     }
@@ -115,7 +115,7 @@
   .examples-list {
     & li {
       margin-bottom: 30px;
-      &:nth-child(n + 8) {
+      &:nth-child(n + 9) {
         margin-bottom: 0;
       }
       &:nth-child(2n) {
