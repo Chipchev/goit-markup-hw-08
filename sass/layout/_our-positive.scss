@@ -1,4 +1,7 @@
 .our-skills {
+  & li:not(:last-child) {
+    margin-bottom: 30px;
+  }
   & h3 {
     margin-bottom: 10px;
     font-family: var(--font-general);
@@ -46,6 +49,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .our-positive {
+    padding-bottom: 0px;
+  }
   .our-skills {
     display: flex;
     flex-wrap: nowrap;

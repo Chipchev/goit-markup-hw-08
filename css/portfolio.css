@@ -492,6 +492,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     color: var(--hover-color);
+    font-family: var(--font-general);
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -999,6 +1000,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-bottom: 0;
+  }
   .footer-list {
     text-align: start;
   }

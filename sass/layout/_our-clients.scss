@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px 0 20px;
+  margin: 0 auto;
+  max-width: 480px;
   & li {
     margin-top: 30px;
   }
@@ -70,10 +72,19 @@
   .clients-list-link {
     width: 226px;
   }
+  .clients-list {
+    max-width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients-list-link {
     width: 170px;
+  }
+  .clients-list {
+    max-width: 1200px;
+  }
+  .our-clients {
+    margin-bottom: 30px;
   }
 }
 //   .clients-list-link {
