@@ -59,6 +59,7 @@
       color: var(--hover-color);
     }
     & a {
+      display: flex;
       width: 75%;
       height: 100%;
     }

@@ -2,31 +2,21 @@
   .mobile-menu {
     z-index: 10;
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-150%);
-            transform: translateX(-50%) translateY(-150%);
+    transform: translateX(-50%) translateY(-150%);
     background-color: #ffffff;
     padding: 48px 40px;
-    -webkit-transition: var(--animation);
     transition: var(--animation);
   }
   .mobile-menu.is-open {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
   }
   .mobile-close-btn {
     position: absolute;
@@ -41,7 +31,6 @@
   .mobile-close-btn .mobile-close-icon {
     width: 18px;
     height: 18px;
-    -webkit-transition: var(--animation);
     transition: var(--animation);
   }
   .mobile-close-btn:focus {
@@ -57,7 +46,6 @@
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-    -webkit-transition: var(--animation);
     transition: var(--animation);
   }
   .mobile-nav-item:not(:last-child) {
@@ -70,6 +58,7 @@
     color: var(--hover-color);
   }
   .mobile-nav-item a {
+    display: flex;
     width: 75%;
     height: 100%;
   }
@@ -92,22 +81,15 @@
     color: var(--p-color);
   }
   .mobile-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .mobile-social-link {
     margin-bottom: 10px;
   }
   .mobile-social-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     color: var(--hover-color);
     font-family: var(--font-general);
     font-weight: 500;
@@ -118,15 +100,13 @@
   .mobile-social-item:not(:last-child)::after {
     content: "";
     display: inline-block;
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+    align-self: baseline;
     height: 1px;
     width: 22px;
     color: rgba(33, 33, 33, 0.2);
     background-color: rgba(33, 33, 33, 0.2);
     margin: 10px 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
