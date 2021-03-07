@@ -169,36 +169,46 @@ img {
   width: 100%;
 }
 
-.current-link {
-  font-family: var(--font-general);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--hover-color);
+@media screen and (min-width: 320px) {
+  .current-link {
+    font-family: var(--font-general);
+    color: var(--hover-color);
+  }
+  .mobile-menu .current-link {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
-.current-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -29px;
-  width: 100%;
-  height: 4px;
-  display: block;
-  background-color: var(--hover-color);
-  border-radius: 2px;
-  -webkit-transition: var(--animation);
-  transition: var(--animation);
-}
-
-.mobile-menu .current-link {
-  font-size: 40px;
-  line-height: 47px;
-}
-
-.mobile-menu .current-link::after {
-  display: none;
+@media screen and (min-width: 480px) {
+  .current-link {
+    font-family: var(--font-general);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
+  .current-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -29px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: var(--hover-color);
+    border-radius: 2px;
+    -webkit-transition: var(--animation);
+    transition: var(--animation);
+  }
+  .mobile-menu .current-link {
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .mobile-menu .current-link::after {
+    display: none;
+  }
 }
 
 .logo-link {
@@ -483,6 +493,11 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mobile-social-link {
+    margin-bottom: 10px;
   }
   .mobile-social-item {
     display: -webkit-box;
@@ -508,6 +523,34 @@ img {
     margin: 10px 0;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contact-item.contact-phone {
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-family: var(--font-general);
+    color: var(--hover-color);
+  }
+  .mobile-contact-item.contact-mail {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-family: var(--font-general);
+    color: var(--p-color);
+  }
+  .mobile-nav-item {
+    color: var(--text-color);
+    font-family: var(--font-general);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
