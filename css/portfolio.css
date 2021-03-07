@@ -471,6 +471,10 @@ img {
   .mobile-nav-item:hover {
     color: var(--hover-color);
   }
+  .mobile-nav-item a {
+    width: 75%;
+    height: 100%;
+  }
   .mobile-contact-item.contact-phone {
     margin-bottom: 32px;
     font-size: 34px;

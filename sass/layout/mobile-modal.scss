@@ -58,6 +58,10 @@
     &:hover {
       color: var(--hover-color);
     }
+    & a {
+      width: 75%;
+      height: 100%;
+    }
   }
   .mobile-contact-item {
     &.contact-phone {
