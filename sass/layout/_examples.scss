@@ -74,7 +74,29 @@
     transform: translateY(0%);
   }
 }
-
+@media screen and (max-width: 479px) {
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+  }
+  & a {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .category-list {
     justify-content: center;
